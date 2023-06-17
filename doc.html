@@ -105,7 +105,26 @@ $ Send the .exe file to desktop
             <h3><b>Step6 (Message)</b></h3>
             <img src="https://firebasestorage.googleapis.com/v0/b/paras-mani.appspot.com/o/step6.PNG?alt=media&token=e73606cf-c8aa-4fcb-a148-4e4d488c3017" alt="step-6" width="600" />
         </div>
+        <hr />
+        <h3>Consume Message</h3>
+        <p>To consume a message using Kafka Play, use the following steps:</p>
 
+        <ol>
+            <li>Launch the app</li>
+            <li>Select the consume option (Selected by default)</li>
+            <li>Enter the auth and broker url same as producer. follow step 3 and 4 of producer doc</li>
+            <li>Enter the topic,key,groupId,auto offset reset ploicy</li>
+            <li>Press send button. If the message exists it will be returned other wise empty array will print</li>
+        </ol>
+        <p>*** If you do not have any consumer group create a new by entering some new name</p>
+        <p></p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/paras-mani.appspot.com/o/consume1.PNG?alt=media&token=e83180e3-2b21-4c70-ab50-6e1e41a407d6" alt="consume1" width="600" />
+        <p></p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/paras-mani.appspot.com/o/consume2.PNG?alt=media&token=2ca02c38-8cbc-4b48-ab89-d1ad1e709380" alt="consume2" width="600" />
+        <p><b>Response Body</b></p>
+        <pre>
+            [  {    "key": "123",    "payload": "{\"Hello\":\"Hi there\",\"key\":\"123\"}"  }]
+        </pre>
         <div class="section">
             <h2>API Reference</h2>
             <p>For detailed information about the API used in Kafka Play, please refer to the API reference documentation.</p>
